@@ -1,9 +1,11 @@
 # mysql-promisify
 
 A promisified class for npm mysql lib:
+
 https://www.npmjs.com/package/mysql
 
-The fomat of escaping query identifier is set to be ':word' for convenience
+The fomat of escaping query identifier is set to be ':word' and '|word' for value and table/field name respectively for convenience
+
 https://www.npmjs.com/package/mysql#custom-format
 
 ## Installation
@@ -143,7 +145,11 @@ Simulate the query substitution for debug
 ```
 
 Transaction, becare that some sql will trigger implicit commit immediately
-fyr: https://dev.mysql.com/doc/refman/5.5/en/implicit-commit.html
+
+fyr: 
+
+https://dev.mysql.com/doc/refman/5.5/en/implicit-commit.html
+
 ```javascript
 (async() => {
     const tdb = await db.getTransactionDb();
