@@ -106,7 +106,7 @@ Use escape string as column name or table name
 })();
 ```
 
-Simulate the query substitution
+Simulate the query substitution for debug
 ```javascript
 (async() => {
     const data = {
@@ -142,7 +142,8 @@ Simulate the query substitution
 })();
 ```
 
-Transaction
+Transaction, becare that some sql will trigger implicit commit immediately
+fyr: https://dev.mysql.com/doc/refman/5.5/en/implicit-commit.html
 ```javascript
 (async() => {
     const tdb = await db.getTransactionDb();
