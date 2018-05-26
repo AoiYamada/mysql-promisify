@@ -1,10 +1,10 @@
 {
   "name": "mysql-promisify",
   "version": "1.0.0",
-  "description": "promisify npm mysql lib",
+  "description": "promisify npm mysql",
   "main": "MySQL.js",
   "scripts": {
-    "test": "mocha --recursive ./test"
+    "test": "mocha --recursive ./test --timeout=5000"
   },
   "keywords": [
     "mysql",
@@ -15,6 +15,7 @@
   "author": "AoiYamada",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^2.4.1",
     "mysql": "^2.15.0"
   },
   "devDependencies": {

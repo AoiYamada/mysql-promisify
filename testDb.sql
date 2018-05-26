@@ -1,4 +1,4 @@
-CREATE TABLE `test_2`.`test` (
+CREATE TABLE `test`.`test` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
   `testcol1` VARCHAR(45) NULL DEFAULT NULL,
   `testcol2` VARCHAR(45) NULL DEFAULT NULL,
