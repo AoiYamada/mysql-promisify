@@ -1,10 +1,14 @@
 {
   "name": "mysql-promisify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "promisify npm mysql",
   "main": "MySQL.js",
   "scripts": {
     "test": "mocha --recursive ./test --timeout=5000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AoiYamada/mysql-promisify.git"
   },
   "keywords": [
     "mysql",
