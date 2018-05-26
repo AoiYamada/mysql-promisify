@@ -200,7 +200,8 @@ https://dev.mysql.com/doc/refman/5.5/en/implicit-commit.html
     const { results: read_results_after } = await db.query({
         sql: `SELECT * FROM test;`
     });
-    // expect(read_results_before.length).equal(read_results_after.length);
+    // expect(read_results_before.length).equal(read_results_after.length); // for rollback
+    // expect(read_results_before.length + 1).equal(read_results_after.length); // for commit
 })();
 ```
 
