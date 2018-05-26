@@ -10,7 +10,7 @@ https://www.npmjs.com/package/mysql#custom-format
 
 ## Installation
 ```bash
-npm i git+https://github.com/AoiYamada/mysql-promisify --save
+npm i mysql-promisify --save
 ```
 
 ## Mock DB
@@ -209,6 +209,3 @@ https://dev.mysql.com/doc/refman/5.5/en/implicit-commit.html
 ```bash
 npm test
 ```
-
-## Develope
-Merge to master
