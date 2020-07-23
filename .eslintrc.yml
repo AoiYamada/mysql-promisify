@@ -1,0 +1,48 @@
+env:
+  node: true
+  es2020: true
+  # jest/globals: true
+extends:
+  - airbnb-base
+  - plugin:jest/recommended
+plugins:
+  - jest
+parserOptions:
+  ecmaVersion: 11
+  sourceType: script
+rules:
+  no-unused-vars:
+    - error
+  import/no-extraneous-dependencies:
+    - error
+  no-underscore-dangle:
+    - off
+  no-console: off
+  no-bitwise:
+    - error
+  no-sync:
+    - error
+    - allowAtRootLevel: true
+  strict:
+    - error
+    - safe
+  jest/expect-expect:
+    - error
+    - assertFunctionNames:
+        - expect
+        - request
+        - shouldBeFailed
+  padding-line-between-statements:
+    - error
+    - blankLine: "always"
+      prev: "*"
+      next: ["return", "break"]
+    - blankLine: "always"
+      prev: ["const", "let", "var", "block-like"]
+      next: "*"
+    - blankLine: "any"
+      prev: ["const", "let", "var"]
+      next: ["const", "let", "var"]
+  curly:
+    - error
+    - "all"

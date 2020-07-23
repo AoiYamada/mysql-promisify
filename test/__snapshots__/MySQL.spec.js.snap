@@ -1,0 +1,281 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MySQL Create Data to DB 1`] = `
+Object {
+  "fields": undefined,
+  "results": Object {
+    "affectedRows": 1,
+    "changedRows": 0,
+    "fieldCount": 0,
+    "insertId": Any<Number>,
+    "message": "",
+    "protocol41": true,
+    "serverStatus": 2,
+    "warningCount": 0,
+  },
+}
+`;
+
+exports[`MySQL Read Data From DB 1`] = `
+Object {
+  "fields": Array [
+    FieldPacket {
+      "catalog": "def",
+      "charsetNr": 63,
+      "db": "test",
+      "decimals": 0,
+      "default": undefined,
+      "flags": 16899,
+      "length": 11,
+      "name": "id",
+      "orgName": "id",
+      "orgTable": "test",
+      "protocol41": true,
+      "table": "test",
+      "type": 3,
+      "zeroFill": false,
+    },
+    FieldPacket {
+      "catalog": "def",
+      "charsetNr": 33,
+      "db": "test",
+      "decimals": 0,
+      "default": undefined,
+      "flags": 0,
+      "length": 135,
+      "name": "testcol1",
+      "orgName": "testcol1",
+      "orgTable": "test",
+      "protocol41": true,
+      "table": "test",
+      "type": 253,
+      "zeroFill": false,
+    },
+    FieldPacket {
+      "catalog": "def",
+      "charsetNr": 33,
+      "db": "test",
+      "decimals": 0,
+      "default": undefined,
+      "flags": 0,
+      "length": 135,
+      "name": "testcol2",
+      "orgName": "testcol2",
+      "orgTable": "test",
+      "protocol41": true,
+      "table": "test",
+      "type": 253,
+      "zeroFill": false,
+    },
+    FieldPacket {
+      "catalog": "def",
+      "charsetNr": 33,
+      "db": "test",
+      "decimals": 0,
+      "default": undefined,
+      "flags": 0,
+      "length": 135,
+      "name": "testcol3",
+      "orgName": "testcol3",
+      "orgTable": "test",
+      "protocol41": true,
+      "table": "test",
+      "type": 253,
+      "zeroFill": false,
+    },
+    FieldPacket {
+      "catalog": "def",
+      "charsetNr": 33,
+      "db": "test",
+      "decimals": 0,
+      "default": undefined,
+      "flags": 0,
+      "length": 135,
+      "name": "testcol4",
+      "orgName": "testcol4",
+      "orgTable": "test",
+      "protocol41": true,
+      "table": "test",
+      "type": 253,
+      "zeroFill": false,
+    },
+    FieldPacket {
+      "catalog": "def",
+      "charsetNr": 33,
+      "db": "test",
+      "decimals": 0,
+      "default": undefined,
+      "flags": 0,
+      "length": 135,
+      "name": "testcol5",
+      "orgName": "testcol5",
+      "orgTable": "test",
+      "protocol41": true,
+      "table": "test",
+      "type": 253,
+      "zeroFill": false,
+    },
+  ],
+  "results": Array [
+    RowDataPacket {
+      "id": 1,
+      "testcol1": "123",
+      "testcol2": "456",
+      "testcol3": "789",
+      "testcol4": null,
+      "testcol5": null,
+    },
+  ],
+}
+`;
+
+exports[`MySQL Transaction Commit 1`] = `
+Object {
+  "_connection": Any<Object>,
+}
+`;
+
+exports[`MySQL Transaction Commit 2`] = `
+OkPacket {
+  "affectedRows": 1,
+  "changedRows": 0,
+  "fieldCount": 0,
+  "insertId": 3,
+  "message": "",
+  "protocol41": true,
+  "serverStatus": 3,
+  "warningCount": 0,
+}
+`;
+
+exports[`MySQL Transaction Rollback 1`] = `
+Object {
+  "_connection": Any<Object>,
+}
+`;
+
+exports[`MySQL Transaction Rollback 2`] = `
+OkPacket {
+  "affectedRows": 1,
+  "changedRows": 0,
+  "fieldCount": 0,
+  "insertId": 2,
+  "message": "",
+  "protocol41": true,
+  "serverStatus": 3,
+  "warningCount": 0,
+}
+`;
+
+exports[`MySQL Use escape string as column name or table name 1`] = `
+Object {
+  "fields": Array [
+    FieldPacket {
+      "catalog": "def",
+      "charsetNr": 63,
+      "db": "test",
+      "decimals": 0,
+      "default": undefined,
+      "flags": 16899,
+      "length": 11,
+      "name": "id",
+      "orgName": "id",
+      "orgTable": "test",
+      "protocol41": true,
+      "table": "test",
+      "type": 3,
+      "zeroFill": false,
+    },
+    FieldPacket {
+      "catalog": "def",
+      "charsetNr": 33,
+      "db": "test",
+      "decimals": 0,
+      "default": undefined,
+      "flags": 0,
+      "length": 135,
+      "name": "testcol1",
+      "orgName": "testcol1",
+      "orgTable": "test",
+      "protocol41": true,
+      "table": "test",
+      "type": 253,
+      "zeroFill": false,
+    },
+    FieldPacket {
+      "catalog": "def",
+      "charsetNr": 33,
+      "db": "test",
+      "decimals": 0,
+      "default": undefined,
+      "flags": 0,
+      "length": 135,
+      "name": "testcol2",
+      "orgName": "testcol2",
+      "orgTable": "test",
+      "protocol41": true,
+      "table": "test",
+      "type": 253,
+      "zeroFill": false,
+    },
+    FieldPacket {
+      "catalog": "def",
+      "charsetNr": 33,
+      "db": "test",
+      "decimals": 0,
+      "default": undefined,
+      "flags": 0,
+      "length": 135,
+      "name": "testcol3",
+      "orgName": "testcol3",
+      "orgTable": "test",
+      "protocol41": true,
+      "table": "test",
+      "type": 253,
+      "zeroFill": false,
+    },
+    FieldPacket {
+      "catalog": "def",
+      "charsetNr": 33,
+      "db": "test",
+      "decimals": 0,
+      "default": undefined,
+      "flags": 0,
+      "length": 135,
+      "name": "testcol4",
+      "orgName": "testcol4",
+      "orgTable": "test",
+      "protocol41": true,
+      "table": "test",
+      "type": 253,
+      "zeroFill": false,
+    },
+    FieldPacket {
+      "catalog": "def",
+      "charsetNr": 33,
+      "db": "test",
+      "decimals": 0,
+      "default": undefined,
+      "flags": 0,
+      "length": 135,
+      "name": "testcol5",
+      "orgName": "testcol5",
+      "orgTable": "test",
+      "protocol41": true,
+      "table": "test",
+      "type": 253,
+      "zeroFill": false,
+    },
+  ],
+  "results": Array [
+    RowDataPacket {
+      "id": 1,
+      "testcol1": "123",
+      "testcol2": "456",
+      "testcol3": "789",
+      "testcol4": null,
+      "testcol5": null,
+    },
+  ],
+}
+`;

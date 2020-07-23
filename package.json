@@ -1,10 +1,15 @@
 {
   "name": "mysql-promisify",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "promisify npm mysql",
-  "main": "MySQL.js",
+  "engines": {
+    "node": "^10",
+    "npm": "^6.12",
+    "yarn": ">=1.22"
+  },
+  "main": "src/MySQL.js",
   "scripts": {
-    "test": "mocha --recursive ./test --timeout=5000"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -19,11 +24,24 @@
   "author": "AoiYamada",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^2.4.1",
-    "mysql": "^2.15.0"
+    "chalk": "^4.1.0",
+    "mysql": "2.18.1"
   },
   "devDependencies": {
-    "chai": "^4.1.2",
-    "mocha": "^5.1.1"
+    "@commitlint/cli": "^9.1.1",
+    "@commitlint/config-conventional": "^9.1.1",
+    "eslint": "^7.5.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^23.18.0",
+    "husky": "^4.2.5",
+    "jest": "^26.1.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "eslint ./src ./test --fix",
+      "pre-push": "yarn test",
+      "commit-msg": "commitlint -e $GIT_PARAMS"
+    }
   }
 }
