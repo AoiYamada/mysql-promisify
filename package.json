@@ -4,7 +4,7 @@
   "description": "promisify npm mysql",
   "engines": {
     "node": "^10",
-    "npm": "^6.12",
+    "npm": "^7.0.0",
     "yarn": ">=1.22"
   },
   "main": "src/MySQL.js",
